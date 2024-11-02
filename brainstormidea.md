@@ -4,7 +4,6 @@ Student accomodations:
 
 Form Layout: 
 - Name
-- University
 - Pick an organisation (Student Roost, Uni of Leicester)
 - Pick the room type
 - Rate out of 5
