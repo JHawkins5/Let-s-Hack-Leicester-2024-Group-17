@@ -12,7 +12,7 @@ function hasValue(input, message) {
     }
 }
 
-form.addEventListener('Submit', function (event) {
+form.addEventListener('submit', function (event) {
     // stop the form from submitting
     event.preventDefault();
 
