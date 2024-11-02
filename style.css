@@ -61,7 +61,7 @@ input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 6px;
   resize: vertical;
 }
 
@@ -83,8 +83,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #  background-color: #5a8cce;
-;
+  background-color: #5a8cce;
 }
 
 .container {
@@ -119,3 +118,4 @@ form {
   color: #2f4460;
 
 }
+
