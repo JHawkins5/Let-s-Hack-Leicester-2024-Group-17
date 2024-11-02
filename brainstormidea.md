@@ -5,7 +5,8 @@ Student accomodations:
 Form Layout: 
 - Name
 - University
-- Accomodation building (pick out of options)
+- Pick an organisation (Student Roost, Uni of Leicester)
+- Pick the building
 - Rate out of 5
 - Box to type out review
 
