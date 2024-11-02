@@ -1,5 +1,5 @@
 // identify the form and load it
-const form = document.getElementByClass('form');
+const form = document.getElementById('form');
 
 // set error messages for validation
 const RATING_REQUIRED = "Please enter a rating.";
