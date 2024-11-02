@@ -12,6 +12,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         if (input.value.trim() === "") {
             alert(message);
         }
+        else {
+            return input;
+        }
     }
 
     form.addEventListener('submit', function (event) {
