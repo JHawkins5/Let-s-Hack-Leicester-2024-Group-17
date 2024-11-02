@@ -42,8 +42,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         object['review'] = review;
         
         // convert the data to JSON
-        var json = JSON.stringify(object);
-        console.log(json);
+        var json = new FormData();
+        json.append('json', JSON.stringify(object));
+
+        fetch("/echo/json",
+        {
+            method: "POST",
+            body: json
+        })
+        .then(res => res.json())
+        .then(res => console.log(res));
+
         return json;
     });
 })
