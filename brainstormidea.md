@@ -6,7 +6,7 @@ Form Layout:
 - Name
 - University
 - Pick an organisation (Student Roost, Uni of Leicester)
-- Pick the building
+- Pick the room type
 - Rate out of 5
 - Box to type out review
 
