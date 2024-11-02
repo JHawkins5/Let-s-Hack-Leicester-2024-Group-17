@@ -1,7 +1,6 @@
 // identify the form and load it when the document has loaded
 window.addEventListener('DOMContentLoaded', (event) => {
     const form = document.getElementById('form');
-    console.log(form)
 
     // set error messages for validation
     const RATING_REQUIRED = "Please enter a rating.";
@@ -56,6 +55,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         .then(res => res.json())
         .then(res => console.log(res));
 
+        console.log(json);
         return json;
     });
 })
