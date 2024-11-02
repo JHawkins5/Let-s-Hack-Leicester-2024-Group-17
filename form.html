@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src='formToJSON.js'></script>
 </head>
 <body>
   <top>
@@ -18,6 +17,7 @@
     <li><a href="addbuilding.html">Add My Building</a></li>
   </ul>
   <h1>Submit A Review</h1>
+  <form>
   <div class="form">
     <form action="/action_page.php" id="form">
     <div class="row">
@@ -58,12 +58,14 @@
         <label for="review">Review</label>
       </div>
       <div class="col-75">
-        <textarea id="review" name="review" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="review" name="revie" placeholder="Write something.." style="height:200px"></textarea>
       </div>
     </div>
     <br>
     <div class="row">
-      <input type="submit" value="Submit">
+      <form action="thankupage.html">
+        <input type="submit" value="Submit">    
+      </form>
     </div>
     </form>
   </div>
