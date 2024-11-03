@@ -28,14 +28,33 @@ body {
   padding: 0;
 }
 
-h1 {
-  text-align: center;
-  margin: 20px;
-  color:#2f4460 ;
-}
+
 main {
-  margin: 20px;
-}
+        color: #2f4460;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+
+        border-radius: 8px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px;
+        color: #2f4460;
+    }
+
+    h4 {
+        margin-top: 20px;
+        color: #2f4460;
+    }
+
+    p {
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
 /* Navbar Styling */
 nav ul {
   list-style-type: none;
