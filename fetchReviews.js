@@ -32,14 +32,25 @@ async function fetchData() {
             if (currentDocumentName == 'freemans.html') {
                 for (let i = 0; i < 6; i++) {
                     var subdiv = document.createElement("div");
-                    if (i == 3) {
-                        subdiv.innerHTML = elements[i] + " stars";
-                    }
-                    else if (i == 5) {
-                        subdiv.innerHTML = "&nbsp;";
-                    }
-                    else {
-                        subdiv.innerHTML = elements[i];
+                    switch (i) {
+                        case 0:
+                            subdiv.innerHTML = "Name: " + name;
+                            break;
+                        case 1:
+                            subdiv.innerHTML = "Location: " + accommodation;
+                            break;
+                        case 2:
+                            subdiv.innerHTML = "Room type: " + roomType;
+                            break;
+                        case 3:
+                            subdiv.innerHTML = "Rating: " + rating + " stars"
+                            break;
+                        case 4:
+                            subdiv.innerHTML = "Review: &nbsp;" + review;
+                            break;
+                        case 5:
+                            subdiv.innerHTML = "&nbsp;";
+                            break;
                     }
                     
                     div.appendChild(subdiv);
