@@ -32,7 +32,13 @@ async function fetchData() {
             if (currentDocumentName == 'freemans.html') {
                 for (let i = 0; i < 5; i++) {
                     var subdiv = document.createElement("div");
-                    subdiv.innerHTML = elements[i];
+                    if (i == 3) {
+                        subdiv.innerHTML = elements[i] + " stars";
+                    }
+                    else {
+                        subdiv.innerHTML = elements[i];
+                    }
+                    
                     div.appendChild(subdiv);
                 }
             }
