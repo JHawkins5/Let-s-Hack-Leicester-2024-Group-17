@@ -3,54 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <script src='"C:\Users\jacka\OneDrive\Documents\Uni-Jacks-Laptop\Year 2\Hackathon\formToJSON.js"'></script>
+  <title>Review Accommodation</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="formToJSON.js"></script>
 </head>
 <body>
+  <header>
+    <h1>Accommodation Reviews</h1>
+  </header>
+  
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="reviews.html">Reviews</a></li>
     <li><a href="form.html">Submit A Review</a></li>
     <li><a href="addbuilding.html">Add My Building</a></li>
   </ul>
-  <h1>Submit A Review</h1>
-  <div class="form">
-    <form action="submit">
-    <div class="row">
-      <div class="col-25">
-        <label for="name">Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name..">
-      </div>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="accomodation">Accomodation</label>
-      </div>
-      <div class="col-75">
-        <select id="accomodation" name="accomodation">
-          <option value="freemans">Freeman's Common</option>
-          <option value="opal">Opal Court</option>
-          <option value="nixon">Nixon</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="review">Review</label>
-      </div>
-      <div class="col-75">
-        <textarea id="review" name="revie" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-    </form>
-  </div>
+
+  <h1>Submit a Review</h1>
   
+  <form action="/action_page.php" id="form">
+    <div class="form">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="accommodation">Accommodation</label>
+        </div>
+        <div class="col-75">
+          <select id="accommodation" name="accommodation">
+            <option value="freemans">Freeman's Common</option>
+            <option value="opal">Opal Court</option>
+            <option value="nixon">Nixon</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="roomtype">Room Type</label>
+        </div>
+        <div class="col-75">
+          <select id="roomtype" name="roomtype">
+            <option value="ensuite">Ensuite</option>
+            <option value="studio">Studio</option>
+            <option value="shared">Shared</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="rating">Rating</label>
+        </div>
+        <div class="col-75">
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" aria-label="5 stars" />
+            <label for="star5" title="5 stars" aria-hidden="true"></label>
+            <input type="radio" id="star4" name="rating" value="4" aria-label="4 stars" />
+            <label for="star4" title="4 stars" aria-hidden="true"></label>
+            <input type="radio" id="star3" name="rating" value="3" aria-label="3 stars" />
+            <label for="star3" title="3 stars" aria-hidden="true"></label>
+            <input type="radio" id="star2" name="rating" value="2" aria-label="2 stars" />
+            <label for="star2" title="2 stars" aria-hidden="true"></label>
+            <input type="radio" id="star1" name="rating" value="1" aria-label="1 star" />
+            <label for="star1" title="1 star" aria-hidden="true"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="review">Review</label>
+        </div>
+        <div class="col-75">
+          <textarea id="review" name="review" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </div>
+  </form>
 </body>
 </html>
+
