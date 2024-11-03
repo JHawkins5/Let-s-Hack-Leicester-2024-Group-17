@@ -5,71 +5,74 @@
   <meta name="viewport" content="width=device-width">
   <title>Review Accommodation</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src='formToJSON.js'></script>
+  <script src="formToJSON.js"></script>
 </head>
 <body>
-  <top>
+  <header>
     <h1>Accommodation Reviews</h1>
-  </top>
+  </header>
+  
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="reviews.html">Reviews</a></li>
     <li><a href="form.html">Submit A Review</a></li>
     <li><a href="addbuilding.html">Add My Building</a></li>
   </ul>
+
   <h1>Submit a Review</h1>
-  <form>
-  <div class="form">
-    <form action="/action_page.php" id="form">
-    <div class="row">
-      <div class="col-25">
-        <label for="name">Name</label>
+  
+  <form action="/action_page.php" id="form">
+    <div class="form">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name..">
+        </div>
       </div>
-      <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="accommodation">Accommodation</label>
+        </div>
+        <div class="col-75">
+          <select id="accommodation" name="accommodation">
+            <option value="freemans">Freeman's Common</option>
+            <option value="opal">Opal Court</option>
+            <option value="nixon">Nixon</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="roomtype">Room Type</label>
+        </div>
+        <div class="col-75">
+          <select id="roomtype" name="roomtype">
+            <option value="ensuite">Ensuite</option>
+            <option value="studio">Studio</option>
+            <option value="shared">Shared</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="review">Review</label>
+        </div>
+        <div class="col-75">
+          <textarea id="review" name="review" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
       </div>
     </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="accomodation">Accomodation</label>
-      </div>
-      <div class="col-75">
-        <select id="accomodation" name="accomodation">
-          <option value="freemans">Freeman's Common</option>
-          <option value="opal">Opal Court</option>
-          <option value="nixon">Nixon</option>
-        </select>
-      </div>
-    </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="roomtype">Room Type</label>
-    </div>
-    <div class="col-75">
-      <select id="roomtype" name="roomtype">
-        <option value="ensuite">Ensuite</option>
-        <option value="studio">Studio</option>
-        <option value="shared">Shared</option>
-      </select>
-    </div>
-  </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="review">Review</label>
-      </div>
-      <div class="col-75">
-        <textarea id="review" name="review" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <form action="thankupage.html">
-        <input type="submit" value="Submit">    
-      </form>
-    </div>
-    </form>
-  </div>
+  </form>
 </body>
 </html>
 
