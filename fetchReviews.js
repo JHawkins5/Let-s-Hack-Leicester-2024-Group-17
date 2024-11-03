@@ -24,14 +24,20 @@ async function fetchData() {
             console.log(rating);
             const review = entry['review'];
             console.log(review);
+            const elements = [name, accommodation, roomType, rating, review]
 
             const currentPath = window.location.pathname;
             const currentDocumentName = currentPath.substring(currentPath.lastIndexOf('/') + 1);
 
             if (currentDocumentName == 'freemans.html') {
-                div.innerHTML = name + "\n\n" + accommodation + " - " + roomType + "\n\n" + rating + " stars" + "\n\n" + review;
-                document.body.appendChild(div);
+                for (let i = 0; i < 5; i++) {
+                    var subdiv = document.createElement("div");
+                    subdiv.innerHTML = elements[i];
+                    div.appendChild(subdiv);
+                }
             }
+
+            document.body.appendChild(div);
         });
 
         data['reviews']['freemans']['studio'].forEach(entry => {
@@ -51,7 +57,7 @@ async function fetchData() {
             const currentDocumentName = currentPath.substring(currentPath.lastIndexOf('/') + 1);
 
             if (currentDocumentName == 'freemans.html') {
-                div.innerHTML = name + "\n\n" + accommodation + " - " + roomType + "\n\n" + rating + " stars" + "\n\n" + review;
+                div.innerHTML = name + "\n" + accommodation + " - " + roomType + "\n" + rating + " stars" + "\n" + review;
                 document.body.appendChild(div);
             }
         })
@@ -73,7 +79,7 @@ async function fetchData() {
             const currentDocumentName = currentPath.substring(currentPath.lastIndexOf('/') + 1);
 
             if (currentDocumentName == 'freemans.html') {
-                div.innerHTML = name + "\n\n" + accommodation + " - " + roomType + "\n\n" + rating + " stars" + "\n\n" + review;
+                div.innerHTML = name + "\n" + accommodation + " - " + roomType + "\n" + rating + " stars" + "\n" + review;
                 document.body.appendChild(div);
             }
         })
