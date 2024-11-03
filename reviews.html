@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: #2f4460;
+  margin-left: 40px;
+}
+
+div.gallery:hover {
+  border: 3px solid #5a8cce;
+}
+  div.gallery img {
+    width: 174px;
+    height: 174px;
+  }
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Accommodation Reviews</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="fetchReviews.js"></script>
+</head>
+  <header>
+    <h1>Accommodation Reviews</h1>
+  </header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="form.html">Submit A Review</a></li>
+    <li><a href="addbuilding.html">Add My Building</a></li>
+  </ul>
+</nav>
+<main>
+  <h1>Reviews</h1>
+  <p>Buldings (can be filtered by organisation)</p>
+  <div class="gallery">
+    <a href="freemans.html">
+      <img src="Pictures/freemans.jpg" alt="Freeman">
+    </a>
+    <div class="desc">Freeman's Common</div>
+  </div>
+
+  <div class="gallery">
+      <img src="Pictures/nixon.jpg" alt="Nixon">
+    <div class="desc">Nixon Court</div>
+  </div>
+
+  <div class="gallery">
+      <img src="Pictures/opal.jpg" alt="Opal">
+    <div class="desc">Opal Court</div>
+  </div>
+
+  <div class="gallery">
+      <img src="Pictures/Filbert village.jpg" alt="Fibert">
+    <div class="desc">Filbert Village</div>
+  </div>
+  
+  <div class="gallery">
+      <img src="Pictures/Reynard House.jpg" alt="Reynard">
+    </a>    <div class="desc">Reynard House</div>
+  </div>
+
+
+  <div class="gallery">
+      <img src="Pictures/Code Leicester.jpg" alt="Code">
+    <div class="desc">Code</div>
+  </div>
+
+  <div class="gallery">
+      <img src="Pictures/Tannery.jpg" alt="Tannery" >
+    <div class="desc">Tannery</div>
+  </div>
+</main>
+</html>
