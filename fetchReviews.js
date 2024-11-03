@@ -36,7 +36,7 @@ async function fetchData() {
                         subdiv.innerHTML = elements[i] + " stars";
                     }
                     else if (i == 5) {
-                        subdiv.innerHTML = "";
+                        subdiv.innerHTML = "&nbsp;";
                     }
                     else {
                         subdiv.innerHTML = elements[i];
