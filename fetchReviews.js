@@ -11,6 +11,19 @@ async function fetchData() {
         const data = await(response.json());
 
         console.log(data);
+
+        data.forEach(entry => {
+            const name = entry['name'];
+            console.log(name.value);
+            const accommodation = entry['accommodation'];
+            console.log(accommodation.value);
+            const roomType = entry['roomtype'];
+            console.log(roomType.value);
+            const rating = entry['rating'];
+            console.log(rating.value);
+            const review = entry['review'];
+            console.log(review.value);
+        });
     }
     catch (error) {
         console.error("There has been a problem with your fetch operation: ", error);
