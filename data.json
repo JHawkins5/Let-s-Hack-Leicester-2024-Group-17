@@ -1,0 +1,29 @@
+{
+  "reviews": {
+    "freemans": {
+      "ensuite": [
+        {
+          "name": "Matthew",
+          "accommodation": "freemans",
+          "rating": 5,
+          "roomtype": "ensuite",
+          "review": "I didn't go here lol"
+        },
+        {
+          "name": "Matthew",
+          "accommodation": "freemans",
+          "rating": 5,
+          "roomtype": "ensuite",
+          "review": "I loved it!"
+        },
+        {
+          "name": "Matthew",
+          "accommodation": "freemans",
+          "rating": 5,
+          "roomtype": "ensuite",
+          "review": "It's a bit shit"
+        }
+      ]
+    }
+  }
+}
