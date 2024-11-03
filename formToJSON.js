@@ -33,8 +33,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         object['roomType'] = room;
 
         if (hasValue(form.elements[3], RATING_REQUIRED)) {
-            const rating = form.elements[3];
-            let rate = rating.value;
+            const rating = document.querySelector('input[name="rating"]:checked').value;
             object['rating'] = rating;
         }
         else {
@@ -51,18 +50,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
         
         // convert the data to JSON
-        var json = new FormData();
-        json.append('json', JSON.stringify(object));
+        //var json = new FormData();
+        //json.append('json', JSON.stringify(object));
 
-        fetch("/echo/json",
-        {
-            method: "POST",
-            body: json
-        })
-        .then(res => res.json())
-        .then(res => console.log(res));
+        //fetch("/echo/json",
+        //{
+        //    method: "POST",
+        //    body: json
+        //})
+        //.then(res => res.json())
+        //.then(res => console.log(res));
 
-        console.log(json);
-        return json;
+        //console.log(json);
+        //return json;
     });
 })
