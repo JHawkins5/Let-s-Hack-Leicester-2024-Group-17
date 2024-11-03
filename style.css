@@ -119,14 +119,6 @@ form {
 
 }
 
-.reviewDiv {
-  margin-left: 30px;
-  margin-right: 30px;
-  border: 2px solid #2f4460;
-  border-radius: 20px;
-  padding: 30px;
-}
-
 .star-rating {
   display: inline-block;
   font-size: 0; /* Remove white space between inline-block elements */
