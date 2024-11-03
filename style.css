@@ -22,9 +22,22 @@ html {
   height: 100%;
   width: 100%;
 }
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-/* Navigation styles */
-ul {
+h1 {
+  text-align: center;
+  margin: 20px;
+  color:#2f4460 ;
+}
+main {
+  margin: 20px;
+}
+/* Navbar Styling */
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -32,30 +45,33 @@ ul {
   background-color: #2f4460;
 }
 
-li {
+nav ul li {
   float: left;
 }
 
-li a {
+nav ul li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: sans-serif; /* Use a generic font-family */
+  font-size: 18px;
 }
 
-li a:hover {
+nav ul li a:hover {
   background-color: #5a8cce;
 }
 
-/* Header styles */
-h1 {
-  text-align: center;
-  margin: 30px 0; /* Combine margin settings for simplicity */
-  color: #2f4460;
-  font-family: sans-serif; /* Use a generic font-family */
+/* "Accommodation Reviews" Title Styling */
+nav ul li.title {
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 14px 20px;
+  color: white;
 }
+
+
 
 /* Form and input styles */
 input[type=text], select, textarea {
@@ -123,5 +139,3 @@ form {
   background-color: #d1e5e6;
   color: #2f4460;
 }
-
-
