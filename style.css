@@ -139,3 +139,43 @@ form {
   background-color: #d1e5e6;
   color: #2f4460;
 }
+
+.star-rating {
+  display: inline-block;
+  font-size: 0; /* Remove white space between inline-block elements */
+  background-color: #fffcfc; /* Dark gray background color */
+  padding: 10px; /* Add some padding for spacing */
+  border-radius: 5px; /* Add rounded corners for style */
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  float: right;
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating label::before {
+  content: "\2605"; /* Unicode character for a star */
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ffc700; /* Yellow color for selected stars */
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #deb217; /* Yellow color on hover */
+}
+
+.star-rating input[type="radio"]:checked + label:hover,
+.star-rating input[type="radio"]:checked + label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label:hover,
+.star-rating input[type="radio"]:checked ~ label:hover ~ label,
+.star-rating label:hover ~ input[type="radio"]:checked ~ label {
+  color: #c59b08; /* Highlight color on selected star hover */
+}
