@@ -30,10 +30,13 @@ async function fetchData() {
             const currentDocumentName = currentPath.substring(currentPath.lastIndexOf('/') + 1);
 
             if (currentDocumentName == 'freemans.html') {
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < 6; i++) {
                     var subdiv = document.createElement("div");
                     if (i == 3) {
                         subdiv.innerHTML = elements[i] + " stars";
+                    }
+                    else if (i == 5) {
+                        subdiv.innerHTML = "";
                     }
                     else {
                         subdiv.innerHTML = elements[i];
