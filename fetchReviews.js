@@ -12,18 +12,47 @@ async function fetchData() {
 
         console.log(data);
 
-        data.forEach(entry => {
+        data['reviews']['freemans']['ensuite'].forEach(entry => {
+            var div = document.createElement("div");
             const name = entry['name'];
-            console.log(name.value);
+            console.log(name);
             const accommodation = entry['accommodation'];
-            console.log(accommodation.value);
+            console.log(accommodation);
             const roomType = entry['roomtype'];
-            console.log(roomType.value);
+            console.log(roomType);
             const rating = entry['rating'];
-            console.log(rating.value);
+            console.log(rating);
             const review = entry['review'];
-            console.log(review.value);
+            console.log(review);
+            div.innerHTML = name + "\n\n" + accommodation + " - " + roomType + "\n\n" + rating + " stars" + "\n\n" + review;
+            document.body.appendChild(div);
         });
+
+        data['reviews']['freemans']['studio'].forEach(entry => {
+            const name = entry['name'];
+            console.log(name);
+            const accommodation = entry['accommodation'];
+            console.log(accommodation);
+            const roomType = entry['roomtype'];
+            console.log(roomType);
+            const rating = entry['rating'];
+            console.log(rating);
+            const review = entry['review'];
+            console.log(review);
+        })
+
+        data['reviews']['freemans']['shared'].forEach(entry => {
+            const name = entry['name'];
+            console.log(name);
+            const accommodation = entry['accommodation'];
+            console.log(accommodation);
+            const roomType = entry['roomtype'];
+            console.log(roomType);
+            const rating = entry['rating'];
+            console.log(rating);
+            const review = entry['review'];
+            console.log(review);
+        })
     }
     catch (error) {
         console.error("There has been a problem with your fetch operation: ", error);
