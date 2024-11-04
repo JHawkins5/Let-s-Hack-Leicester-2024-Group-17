@@ -1,3 +1,5 @@
+// THIS FILE IS NOT USED IN THE FINAL SUBMISSION
+
 // identify the form and load it when the document has loaded
 window.addEventListener('DOMContentLoaded', (event) => {
     const form = document.getElementById('form');
